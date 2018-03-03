@@ -3,3 +3,4 @@ btnGetDisplayMedia.onclick = evt => {
         .then(stream => localView.srcObject = stream)
         .catch(e => console.error(e));
 };
+console.log('hoge');
