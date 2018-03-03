@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WebRTC Sample</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css">
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="removetrack_event_test.js"></script>
+</head>
+
+<body>
+    <div>
+        <button id="btnConnect">接続</button>
+        <button id="btnRemoveAudioTrack">オーディオトラック removeTrack()</button>
+        <button id="btnRemoveVideoTrack">ビデオトラック removeTrack()</button>
+        <button id="btnStopAudioTrack">オーディオトラック stop()</button>
+        <button id="btnStopVideoTrack">ビデオトラック stop()</button>
+        <button id="btnDisabledAudioTrack">オーディオトラック disabled = true</button>
+        <button id="btnDisabledVideoTrack">ビデオトラック disabled = true</button>
+    </div>
+    <div class="view local">
+        <div>local</div>
+        <video id="localView" autoplay preload muted></video>
+    </div>
+    <div class="view remote">
+        <div>remote</div>
+        <video id="remoteView" autoplay preload muted></video>
+    </div>
+</body>
+
+</html>
